@@ -1,0 +1,6 @@
+Jun 24, 2020 2:57:48 PM org.apache.karaf.main.Main launch
+INFO: Installing and starting initial bundles
+Jun 24, 2020 2:57:50 PM org.apache.karaf.main.Main launch
+INFO: All initial bundles installed and set to start
+Jun 24, 2020 2:57:50 PM org.apache.karaf.main.Main$KarafLockCallback lockAcquired
+INFO: Lock acquired. Setting startlevel to 100

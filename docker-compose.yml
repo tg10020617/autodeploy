@@ -1,0 +1,22 @@
+version: "2"
+services:
+        jenkins:
+                build: ./jenkins/jenkins
+                #image: jenkins
+                #restart: unless-stopped
+                ports:
+                        - "8080:8080"
+                volumes:
+                        - "./data/jenkins/jenkins:/var/jenkins_home"
+                        - "./data/jenkins/apache-maven:/usr/local/apache-maven"
+                container_name: cservice-jenkins-1
+
+        nexus3:
+                #build: ./nexus/nexus3
+                image: sonatype/nexus3
+                #restart: unless-stopped
+                volumes:
+                        - "./data/nexus/nexus3:/nexus-data"
+                ports:
+                        - "8081:8081"
+                container_name: cservice-nexus3-1
